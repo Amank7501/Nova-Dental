@@ -87,15 +87,15 @@ export type Site = {
 };
 
 export const site: Site = {
-  name: "Nova Dental",
-  url: "https://novadental.in", // placeholder domain
+  name: "Novu Dental",
+  url: "https://novudental.in", // placeholder domain
   geo: { latitude: "0.0", longitude: "0.0" }, // placeholder — swap for real coordinates
   tagline: "Gentle, modern dental care for the whole family",
   phone: "+91 98765 43210",
   phoneHref: "tel:+919876543210",
   whatsapp:
-    "https://wa.me/919876543210?text=Hi%20Nova%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment.",
-  email: "hello@novadental.in",
+    "https://wa.me/919876543210?text=Hi%20Novu%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+  email: "hello@novudental.in",
   address: {
     line1: "12, 4th Cross, 80 Feet Road",
     line2: "Koramangala 4th Block",
@@ -286,9 +286,9 @@ export const site: Site = {
     },
   ],
   about: {
-    eyebrow: "About Nova Dental",
+    eyebrow: "About Novu Dental",
     heading: "Modern dentistry, with time taken to care.",
-    body: "At Nova Dental we blend specialist expertise with a calm, unhurried approach. From the first consultation to post-treatment follow-up, you'll find clear explanations, honest pricing, and a team that genuinely listens.",
+    body: "At Novu Dental we blend specialist expertise with a calm, unhurried approach. From the first consultation to post-treatment follow-up, you'll find clear explanations, honest pricing, and a team that genuinely listens.",
     pillars: [
       {
         icon: "Shield",
@@ -313,7 +313,7 @@ export const site: Site = {
     ],
   },
   gallery: [
-    { src: "/placeholders/clinic-1.jpg", alt: "Nova Dental reception area", span: "wide" },
+    { src: "/placeholders/clinic-1.jpg", alt: "Novu Dental reception area", span: "wide" },
     { src: "/placeholders/clinic-2.jpg", alt: "Dental treatment chair", span: "tall" },
     { src: "/placeholders/clinic-3.jpg", alt: "Sterilisation room", span: "normal" },
     { src: "/placeholders/clinic-4.jpg", alt: "Waiting lounge", span: "normal" },
@@ -324,7 +324,7 @@ export const site: Site = {
   ],
   contact: {
     eyebrow: "Find us",
-    heading: "Visit Nova Dental.",
+    heading: "Visit Novu Dental.",
     subheading: "Walk-ins welcome. Appointments preferred for faster service.",
     landmarks: [
       "Opposite Forum Mall — ground floor entrance",

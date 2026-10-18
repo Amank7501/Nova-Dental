@@ -62,7 +62,7 @@ export function ServiceCard({ service, variant, index, className = "" }: Props) 
           <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden rounded-2xl bg-white/50 lg:w-1/2">
             <Image
               src={src}
-              alt={`${service.title} at Nova Dental`}
+              alt={`${service.title} at Novu Dental`}
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               onError={() => src !== fallback && setSrc(fallback)}

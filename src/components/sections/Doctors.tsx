@@ -32,7 +32,7 @@ export function Doctors() {
         {specialists.length > 0 && (
           <div className="mt-20">
             <p className="text-xs font-medium uppercase tracking-widest text-slate-600">
-              Also at Nova
+              Also at Novu
             </p>
             <h3 className="mt-2 font-display text-2xl font-semibold text-ink">
               Our visiting specialists
