@@ -1,26 +1,92 @@
 @import "tailwindcss";
+@config "../../tailwind.config.ts";
 
 :root {
+  --primary: #0f766e;
+  --primary-foreground: #ffffff;
+  --accent: #ccfbf1;
+  --accent-foreground: #0f172a;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #0f766e;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --radius: 1rem;
+  --surface: #fafaf7;
+  --surface-raised: #ffffff;
+  --accent-warm: #fb7185;
+  --ink: #0f172a;
+  --ink-muted: #64748b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Teal duotone: put the img inside a wrapper with a primary gradient background. */
+@utility tint-duotone {
+  filter: grayscale(100%) contrast(1.05);
+  mix-blend-mode: multiply;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes wa-pulse {
+  0%,
+  70%,
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.wa-pulse {
+  animation: wa-pulse 5s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-pulse {
+    animation: none;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  [id] {
+    scroll-margin-top: 5rem;
+  }
+  body {
+    background: var(--surface);
+    color: var(--foreground);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    overflow-x: clip;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
