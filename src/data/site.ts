@@ -91,10 +91,10 @@ export const site: Site = {
   url: "https://novudental.in", // placeholder domain
   geo: { latitude: "0.0", longitude: "0.0" }, // placeholder — swap for real coordinates
   tagline: "Gentle, modern dental care for the whole family",
-  phone: "+91 98765 43210",
-  phoneHref: "tel:+919876543210",
+  phone: "+91 72095 50294",
+  phoneHref: "tel:+917209550294",
   whatsapp:
-    "https://wa.me/919876543210?text=Hi%20Novu%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+    "https://wa.me/917209550294?text=Hello%20Novu%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment.",
   email: "hello@novudental.in",
   address: {
     line1: "12, 4th Cross, 80 Feet Road",

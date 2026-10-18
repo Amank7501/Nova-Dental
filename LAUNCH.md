@@ -4,7 +4,8 @@ Every placeholder that must be replaced before going live.
 
 ## Content and assets
 - [ ] Replace all `/public/placeholders/*.jpg` with real clinic photos (hero, doctors, featured service, clinic gallery). Until they exist, components fall back to placehold.co images.
-- [ ] Replace `name`, `phone`, `phoneHref`, `whatsapp` number, `email` and `address` with real values in `src/data/site.ts`.
+- [x] Phone, `phoneHref` and WhatsApp number set to +91 72095 50294.
+- [ ] Replace `email` and `address` with real values in `src/data/site.ts`.
 - [ ] Replace `site.mapEmbedUrl` with the real Google Maps embed URL (the map shows a grey fallback while it contains "PLACEHOLDER").
 - [ ] Replace the placeholder doctors, testimonials, stats, `rating`, `reviewsSummary`, `since`, hours, landmarks and registration number in `src/data/site.ts`.
 - [ ] Replace `src/app/icon.tsx` and `src/app/apple-icon.tsx` with real logo-based icons.
